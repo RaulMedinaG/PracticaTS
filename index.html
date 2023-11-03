@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Vite + TS</title>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center h-screen flex-col">
+
+  <div class="max-w-lg bg-white rounded-lg shadow-md p-6 w-full" id="app"></div>
+
+  <div class="mt-3">
+    <p class="text-lg">Aplica uno de los tres filtros</p>
+  </div>
+
+  <div class="flex">
+    <div class="mt-4 max-w-md bg-white rounded-lg shadow-md p-4 mx-5">
+      <label class="text-gray-600 block font-semibold text-center">Nº de Participantes</label>
+      <select class="border rounded w-full py-2 px-3 text-gray-700" id="participantes"></select>
+    </div>
+  
+    <div class="mt-4 max-w-md bg-white rounded-lg shadow-md p-4 mx-5">
+      <label class="text-gray-600 block font-semibold text-center">Accesibilidad</label>
+      <select class="border rounded w-full py-2 px-3 text-gray-700" id="accesibilidad"></select>
+    </div>
+  
+    <div class="mt-4 max-w-md bg-white rounded-lg shadow-md p-4 mx-5">
+      <label class="text-gray-600 block font-semibold text-center">Precio</label>
+      <select class="border rounded w-full py-2 px-3 text-gray-700" id="precio"></select>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
